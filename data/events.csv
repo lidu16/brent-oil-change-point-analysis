@@ -1,0 +1,17 @@
+Date,Event_Name,Description,Category
+1990-08-02,Gulf War Begins,Iraq invades Kuwait leading to UN sanctions and oil supply disruption,Conflict
+1991-01-17,Operation Desert Storm,Coalition forces begin air campaign against Iraq,Conflict
+1997-11-01,Asian Financial Crisis,Financial crisis spreads across Asia affecting global oil demand,Economic Shock
+1998-03-01,OPEC Production Cuts,OPEC agrees to cut production to boost oil prices,OPEC Decision
+2001-09-11,9/11 Terrorist Attacks,Terrorist attacks in US cause oil price volatility,Conflict
+2003-03-20,Iraq War Begins,US-led invasion of Iraq disrupts oil supplies,Conflict
+2005-08-29,Hurricane Katrina,Hurricane damages oil infrastructure in Gulf of Mexico,Economic Shock
+2008-09-15,Lehman Brothers Collapse,Financial crisis intensifies causing oil price crash,Economic Shock
+2011-02-15,Libya Civil War Begins,Conflict in Libya disrupts oil production,Conflict
+2014-06-01,ISIS Rise in Iraq,Militant group captures oil fields in Iraq,Conflict
+2014-11-27,OPEC Production Decision,OPEC decides not to cut production causing price drop,OPEC Decision
+2015-07-14,Iran Nuclear Deal,Deal reached to limit Iran nuclear program in exchange for sanctions relief,Political
+2016-01-16,Iran Sanctions Lifted,International sanctions on Iran lifted increasing oil supply,Political
+2020-03-06,OPEC+ Price War,Saudi Arabia and Russia fail to agree on production cuts causing price crash,OPEC Decision
+2020-03-11,COVID-19 Pandemic Declared,Global pandemic causes massive demand destruction,Economic Shock
+2022-02-24,Russia-Ukraine War,Russia invades Ukraine causing oil price surge,Conflict
