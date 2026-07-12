@@ -1,45 +1,64 @@
 # Brent Oil Price Change Point Analysis
 
 ## Overview
-This project studies how major geopolitical, macroeconomic, and policy events influence Brent oil prices from 1987 to 2022. The workflow combines exploratory data analysis, event cataloguing, Bayesian change-point detection, and an interactive dashboard for stakeholders.
+This project analyzes how major geopolitical, macroeconomic, and policy events influence Brent oil prices from 1987 to 2022. It combines exploratory data analysis, event cataloguing, Bayesian change-point detection, and an interactive dashboard to make the findings easy to explore.
 
-## Project Goals
-1. Identify major historical events that reshaped Brent oil price regimes.
-2. Quantify structural breaks in price behaviour using Bayesian change-point analysis.
-3. Present the findings through a lightweight Flask and React dashboard.
+## Business Goal
+The analysis helps stakeholders understand when Brent oil prices shifted into new regimes and which historical events may have contributed to those changes. The results are useful for investors, policymakers, and energy-sector analysts who need evidence-based context for price movements.
 
-## Analysis Workflow
-1. Load and clean the Brent price series.
-2. Explore trend, stationarity, and volatility characteristics.
-3. Build a change-point model for the mean level of log prices.
-4. Compare detected change points with a curated event calendar.
-5. Visualize the results in the dashboard and document the findings.
+## What the Project Includes
+- A cleaned Brent oil price dataset and event catalog
+- Statistical analysis of price behavior and volatility
+- A simple Bayesian change-point model to detect structural breaks
+- A Flask backend for serving analysis results
+- A React dashboard for visual exploration
 
-## Assumptions and Limitations
-- The study uses historical time series data and event dates as approximate markers, so it is best interpreted as a statistical association rather than proof of causality.
-- The simple change-point model focuses on mean shifts and does not yet include economic covariates such as GDP, inflation, exchange rates, or supply-demand balances.
-- Event timing is approximate and may overlap with other shocks, which can make attribution noisy.
+## Key Findings
+A sample change-point summary from the analysis indicates a major regime shift around 2003-10-30, with the average price level rising from about $20.08 to about $72.84 per barrel.
 
-## Data Files
-- data/BrentOilPrices.csv: daily Brent price observations.
-- data/events.csv: curated list of geopolitical, economic, and OPEC-related events.
-- data/brent_oil_with_returns.csv: price series with log returns.
-- data/change_point_results.csv: summary output from the change-point analysis.
+## Technology Stack
+- Python: pandas, numpy, matplotlib, seaborn, PyMC, ArviZ
+- Flask: API backend
+- React: interactive dashboard
+- Recharts: charting library
+
+## Project Structure
+- data/: price data, returns data, event data, and analysis outputs
+- src/: reusable analysis helpers
+- dashboard/backend/: Flask API service
+- dashboard/frontend/: React dashboard
+- notebooks/: exploratory analysis notebook
+- tests/: regression tests
 
 ## Run Locally
+### Backend
 ```bash
 pip install -r requirements.txt
 python src/analysis.py
 python dashboard/backend/app.py
 ```
 
-In a second terminal:
+### Frontend
 ```bash
 cd dashboard/frontend
+npm install
 npm start
 ```
 
-## Tests
+## Testing
 ```bash
 python -m unittest discover -s tests -p 'test*.py'
 ```
+
+## Screenshots
+The following screenshots show the project dashboard and analysis experience when the app is running:
+
+![Dashboard overview](asset/Screenshot%201.png)
+
+![Dashboard view](asset/Screenshot%202.png)
+
+![Event and analysis view](asset/Screenshot%203.png)
+
+## Notes
+This project is designed as a practical demonstration of change-point analysis in a business and policy context. It is best interpreted as a statistical exploration rather than proof of direct causation, since many events overlap in time and market behavior is influenced by multiple forces.
+
